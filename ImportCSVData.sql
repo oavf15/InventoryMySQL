@@ -1,0 +1,42 @@
+-- Add data to Categories table
+LOAD DATA LOCAL INFILE '/Data/categories.csv'
+INTO TABLE Categories
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+-- Add data to Products table
+LOAD DATA LOCAL INFILE '/Data/products.csv'
+INTO TABLE Products
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+-- Add data to Orders table
+LOAD DATA LOCAL INFILE '/Data/orders.csv'
+INTO TABLE Orders
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+-- Add data to Stock table
+LOAD DATA LOCAL INFILE '/Data/stock.csv'
+INTO TABLE Stock
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+-- Add data to Suppliers table
+LOAD DATA LOCAL INFILE '/Data/suppliers.csv'
+INTO TABLE Suppliers
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+
+
